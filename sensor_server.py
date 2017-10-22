@@ -1,13 +1,13 @@
-from flask import Flask
+from flask_api import FlaskAPI
 import json
 
 # Rest API
-app = Flask(__name__)
+app = FlaskAPI(__name__)
 
 # Used to load output (later to be loaded from DB).
 def load_data():
     f = open('output.json', 'r')
-    data = json.dumps(f.read())
+    data = json.loads(f.read())
     f.close()
     return data
 
@@ -22,6 +22,7 @@ def put_data():
     print("This will eventually be filled by something.")
 
 try:
+    print(load_data())
     app.run()
 except KeyboardInterrupt:
     print("Exiting web service...")
