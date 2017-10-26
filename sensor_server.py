@@ -23,6 +23,6 @@ def put_data():
 
 try:
     print(load_data())
-    app.run()
+    app.run(host="0.0.0.0") # Setting host to default route to allow LAN access.
 except KeyboardInterrupt:
     print("Exiting web service...")
