@@ -1,3 +1,19 @@
 {
-  "Hello": "test"
+  "data": [
+    {
+      "timeStamp": "10.22.2017 06:35 PM", 
+      "variableName": "Temperature", 
+      "value": 22.64
+    }, 
+    {
+      "timeStamp": "10.22.2017 06:35 PM", 
+      "variableName": "Pressure", 
+      "value": 1012.9
+    }, 
+    {
+      "timeStamp": "10.22.2017 06:35 PM", 
+      "variableName": "Humidity", 
+      "value": 51.0
+    }
+  ]
 }

@@ -29,9 +29,10 @@ def get_data():
 def put_data():
     sensor_data = request.data # Grabbing JSON Dict sent from POST Request.
     store_data(sensor_data)
-    print "++++++++++++++++++++++++++++++++\n"
-    print "Saving Into \"test.json\" ..."
-    print "\n++++++++++++++++++++++++++++++++"
+    print "+++++++++++++++++++++++++++++++++++++++++++++++\n"
+    print "The Following JSON Packet was saved and stored: \n"
+    print json.dumps(sensor_data, indent=2)
+    print "\n++++++++++++++++++++++++++++++++++++++++++++++"
     return "Packet was recieved and stored.\n" 
 
 try:
